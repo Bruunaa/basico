@@ -4,7 +4,6 @@ public class servicePoint {
     public static void main(String[] args) {
         
         Pessoa pessoaFisica = new Pessoa();
-
         pessoaFisica.setTipoDocumento(Enum.valueOf(TipoDocumento.class, "CPF"));
         pessoaFisica.setNumeroDocumento(pessoaFisica.getTipoDocumento().gerarNumeroTeste());
         System.out.println(pessoaFisica);
